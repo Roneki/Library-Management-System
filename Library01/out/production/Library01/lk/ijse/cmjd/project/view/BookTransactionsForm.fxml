@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="504.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cmjd.project.view.controller.BookTransactionsFormController">
+   <children>
+      <Label fx:id="lblBookTransactions" alignment="CENTER" layoutY="-1.0" prefHeight="80.0" prefWidth="601.0" style="-fx-background-color: orange;" text="Book Transactions" textAlignment="CENTER" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageBurrow" fitHeight="200.0" fitWidth="150.0" layoutX="26.0" layoutY="115.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" preserveRatio="true">
+         <image>
+            <Image url="@../images/Borrowing.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageReturn" fitHeight="199.0" fitWidth="175.0" layoutX="284.0" layoutY="115.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" preserveRatio="true">
+         <image>
+            <Image url="@../images/Returning.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageRenew" fitHeight="200.0" fitWidth="200.0" layoutX="509.0" layoutY="115.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" preserveRatio="true">
+         <image>
+            <Image url="@../images/RenewBook.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBack" layoutX="639.0" layoutY="27.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="121.0" style="-fx-background-color: red;" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblSelect" alignment="CENTER" layoutX="298.0" layoutY="351.0" prefHeight="59.0" prefWidth="175.0" text="Select" textAlignment="CENTER" textFill="#d312e4">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="214.0" layoutY="410.0" prefHeight="45.0" prefWidth="374.0" text="Please select one of the above operations to proceed" />
+   </children>
+</AnchorPane>
